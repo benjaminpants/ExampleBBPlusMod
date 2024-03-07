@@ -7,7 +7,7 @@ using HarmonyLib;
 namespace ExampleMod
 {
 	[HarmonyPatch(typeof(Baldi))]
-	[HarmonyPatch("OnTriggerEnter")]
+	[HarmonyPatch("CaughtPlayer")]
 	class BaldiNoKillPatch
 	{
 		static bool Prefix()
